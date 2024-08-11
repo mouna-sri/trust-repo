@@ -1,33 +1,58 @@
 {
-  "providers": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-trustlive-trustlive-0ddc8-authRole",
-      "UnauthRoleArn": "arn:aws:iam::637423266623:role/amplify-trustlive-trustlive-0ddc8-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::637423266623:role/amplify-trustlive-trustlive-0ddc8-authRole",
-      "Region": "ap-south-1",
-      "DeploymentBucketName": "amplify-trustlive-trustlive-0ddc8-deployment",
-      "UnauthRoleName": "amplify-trustlive-trustlive-0ddc8-unauthRole",
-      "StackName": "amplify-trustlive-trustlive-0ddc8",
-      "StackId": "arn:aws:cloudformation:ap-south-1:637423266623:stack/amplify-trustlive-trustlive-0ddc8/ce2aa3d0-57db-11ef-a70e-0683348c3575",
-      "AmplifyAppId": "d1trirrwnjxjex"
-    }
-  },
-  "api": {
-    "trustlive": {
-      "service": "AppSync",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "output": {
-        "authConfig": {
-          "defaultAuthentication": {
-            "authenticationType": "API_KEY",
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
-            }
-          },
-          "additionalAuthenticationProviders": []
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-trustlive-trustlive-0ddc8-authRole",
+            "UnauthRoleArn": "arn:aws:iam::637423266623:role/amplify-trustlive-trustlive-0ddc8-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::637423266623:role/amplify-trustlive-trustlive-0ddc8-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amplify-trustlive-trustlive-0ddc8-deployment",
+            "UnauthRoleName": "amplify-trustlive-trustlive-0ddc8-unauthRole",
+            "StackName": "amplify-trustlive-trustlive-0ddc8",
+            "StackId": "arn:aws:cloudformation:ap-south-1:637423266623:stack/amplify-trustlive-trustlive-0ddc8/ce2aa3d0-57db-11ef-a70e-0683348c3575",
+            "AmplifyAppId": "d1trirrwnjxjex"
         }
-      }
+    },
+    "api": {
+        "trustlive": {
+            "dependsOn": [],
+            "output": {
+                "authConfig": {
+                    "additionalAuthenticationProviders": [],
+                    "defaultAuthentication": {
+                        "apiKeyConfig": {
+                            "apiKeyExpirationDays": 7
+                        },
+                        "authenticationType": "API_KEY"
+                    }
+                },
+                "GraphQLAPIIdOutput": "buvwchx3xjd2tgv3tisgqauazu",
+                "GraphQLAPIEndpointOutput": "https://a7rsyxdtw5aqbgn6t4xcw4t3xi.appsync-api.ap-south-1.amazonaws.com/graphql",
+                "GraphQLAPIKeyOutput": "da2-s2a3ra5ugnbqxjoqmhgp67g7x4"
+            },
+            "providerPlugin": "awscloudformation",
+            "service": "AppSync",
+            "lastPushTimeStamp": "2024-08-11T14:30:35.220Z",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-trustlive-trustlive-0ddc8-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+                "logicalId": "apitrustlive"
+            }
+        },
+        "trustlive-trustlive": {
+            "service": "AppSync",
+            "output": {
+                "authConfig": {
+                    "defaultAuthentication": {
+                        "authenticationType": "API_KEY"
+                    },
+                    "additionalAuthenticationProviders": null
+                },
+                "GraphQLAPIIdOutput": "buvwchx3xjd2tgv3tisgqauazu",
+                "GraphQLAPIEndpointOutput": "https://a7rsyxdtw5aqbgn6t4xcw4t3xi.appsync-api.ap-south-1.amazonaws.com/graphql",
+                "name": "trustlive-trustlive",
+                "region": "ap-south-1",
+                "GraphQLAPIKeyOutput": "da2-s2a3ra5ugnbqxjoqmhgp67g7x4"
+            },
+            "lastPushTimeStamp": "2024-08-11T14:32:38.114Z"
+        }
     }
-  }
 }

@@ -1,0 +1,16 @@
+projects:
+  trustlive-trustlive:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+      - src/API.ts
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+        region: ap-south-1
+        apiId: buvwchx3xjd2tgv3tisgqauazu
+        maxDepth: 2
